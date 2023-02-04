@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Nicola Cavalier"/>
+    <meta name="description" content="Personal Website"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nicola Cavalier</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Brawler&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/css/header.css">
+    <link rel="stylesheet" href="assets/styles/css/style.css">
+
+    <meta property="og:title" content="Nicola Cavalier - Portfolio"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="assets/img/photos/my-photo.jpg">
+    <meta property="og:image:alt" content="Portfolio Preview">
+    <meta property="og:image:width" content="350">
+    <meta property="og:description" content="I&#39;m Nicola Cavalier, a full-stack development student from Italy. Check the website to learn more about me...">
+  </head>
+
+  <body>
+    <header class="header-menu">
+      <nav class="header-sections">
+        <a href="#introduction">HOME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact-me">CONTACT</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="introduction">
+        <div class="description-container">
+          <!--TODO: Replace 20 years with an automatic counter-->
+          <p>I&#39;m Nicola Cavalier, a 20 year old full-stack</br> development student from Italy.</p>
+          <a class="read-more-button" href="#about-me">Read More</a>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="paragraph-title"><span></span>SKILLS</h2>
+
+        <div class="skills-container">
+          <div class="skill-card">
+            <h3 class="skill-header">HARD SKILLS</h3>
+            <ul>
+              <li>Python</li>
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-header">TOOLS</h3>
+            <ul>
+              <li>Git</li>
+              <li>Github</li>
+              <li>VS Code</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3 class="skill-header">SOFT SKILLS</h3>
+            <ul>
+              <li>Problem Solving</li>
+              <li>Team Working</li>
+              <li>Flexibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Currently there are no projects in this section, it's just a template that shows how they will be shown.-->
+      <section id="projects">
+        <h2 class="paragraph-title"><span></span>PROJECTS</h2>
+
+        <div class="projects-container">
+          <div class="back-icon"><img src="assets/img/icons/back-arrow.png" alt="Previous Project Button" height="50px" width="50px"></div>
+
+          <div class="project-card first">
+            <h3 class="project-name">Project Name</h3>
+          </div>
+
+          <div class="project-card second">
+            <h3 class="project-name">Project Name</h3>
+          </div>
+          
+          <div class="next-icon"><img src="assets/img/icons/back-arrow.png" alt="Next Project Button" height="50px" width="50px"></div>
+        </div>
+
+        <!-- Currently there isn't an "all projects" page, therefore this
+             won't redirect you anywhere, since all pages of the website 
+             will share the same header, it's intended to keep the default
+             target="_self".
+        -->
+        <a class="read-more-button" href="">View All Projects</a>
+      </section>
+
+      <section id="about-me">
+        <h2 class="paragraph-title"><span></span>ABOUT ME</h2>
+
+        <div class="photo-container">
+          <img src="assets/img/photos/my-photo.jpg" alt="My own photo">
+        </div>
+
+        <div class="description-container">
+          <p class="description">I&#39;m Nicola Cavalier, I live in Venice, Italy and I&#39;m interested about everything related to tech world. <br><br>
+            
+            I have approached development world for the first time during quarantine where I developed some cards games with Python.<br><br>
+
+            I&#39;m currently studying full-stack development for a better view of development world. <br><br>
+
+            Other than web development I have other hobbies such as card games, anime, manga and music.    
+          </p>
+        </div>
+
+        <div class="social-networks-container">
+          <a href="https://www.instagram.com/nicolacavalier/" target="_blank" rel="noopener"><img src="assets/img/icons/instagram-logo.svg" width="50px" height="50px" alt="Instagram Logo"></a>
+          <a href="https://github.com/cavaliernicola" target="_blank" rel="noopener"><img src="assets/img/icons/github-logo.svg" width="50px" height="50px" alt="Github Logo"></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img src="assets/img/icons/linkedIn_icon.png" width="50px" height="50px" alt="Linkedin Logo"></a> <!-- (I currently don't have an account but I will add it soon)-->
+        </div>
+      </section>
+
+      <section id="contact-me">
+        <h2 class="paragraph-title"><span></span>CONTACT ME</h2>
+        
+        <p class="contact-note">If you want to contact me you can use the email <a href="mailto:cavaliernicola@gmail.com">cavaliernicola@gmail.com</a> or the following form.</p>
+       
+        <!-- Currently there is no script that manages the replies of this form
+             Therefore this will remain empty.
+        -->
+        <form class="contact-form" action="" method="">
+
+          <div class="contact-elements">
+            
+            <!-- I could have used a placeholder for every input type but
+                 doesn't look necessary when there is already a label for it.
+            -->
+            <div class="name-contaier">
+              <label for="name">your name</label>
+              <input type="text" name="name" required>
+            </div>
+
+            <div class="email-container">
+              <label for="email">your email</label>
+              <input type="email" name="email" required>
+            </div>
+
+          </div>
+
+          <div class="message-elements">
+            <div class="text-container">
+              <label for="message">your message</label>
+              <textarea name="message" required></textarea>
+            </div>
+            
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>&#169; Designed and developed by Nicola Cavalier</p>
+      
+        <div>
+          <a href="#introduction"><img src="assets/img/icons/back-arrow.png" height="30px"></a>
+        </div>
+     </div>
+
+    </footer>
+  </body>
+</html>

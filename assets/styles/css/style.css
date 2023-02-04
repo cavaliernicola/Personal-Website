@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/*-------------------------
+  GENERAL
+---------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.read-more-button {
+  display: table;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  padding: 20px 70px;
+}
+.read-more-button:hover {
+  text-decoration: underline;
+}
+
+.paragraph-title {
+  font-family: Public Sans, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.paragraph-title span {
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+  bottom: 7px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 4px solid black;
+  width: 45px;
+}
+
+/*---------------
+  INTRODUCTION
+----------------*/
+#introduction {
+  font-family: Brawler, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  background-color: rgba(227, 138, 34, 0.59);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#introduction .description-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 45px 45px 0 45px;
+  border-radius: 30px;
+  background-color: rgba(223, 197, 201, 0.82);
+}
+#introduction .description-container p {
+  text-align: center;
+}
+
+/*---------------
+  SKILLS SECTION
+----------------*/
+#skills {
+  padding-bottom: 50px;
+  background-color: rgba(245, 88, 88, 0.8);
+}
+#skills .skills-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+#skills .skills-container .skill-card {
+  height: 250px;
+  width: 250px;
+  border-radius: 25px;
+  background-color: rgb(235, 235, 235);
+  margin-bottom: 20px;
+}
+#skills .skills-container .skill-card .skill-header {
+  font-family: Anton, Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2.5px black solid;
+}
+#skills .skills-container .skill-card ul {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  margin-top: 15px;
+  font-size: 24px;
+}
+#skills .skills-container .skill-card ul li::before {
+  content: "■";
+  color: rgb(140, 21, 35);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-bottom: 10px;
+}
+
+/*-----------------
+  PROJECTS SECTION
+------------------*/
+#projects {
+  background-color: rgba(150, 103, 227, 0.79);
+  padding-bottom: 60px;
+}
+#projects .next-icon {
+  margin-right: 10px;
+  align-self: center;
+  transform: rotate(80deg);
+  -webkit-transform: rotate(180deg);
+}
+#projects .back-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  align-self: center;
+}
+#projects .projects-container {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+#projects .projects-container .project-card {
+  height: 400px;
+  width: 400px;
+  border-radius: 35px;
+  position: relative;
+  background-color: rgb(217, 217, 217);
+  margin-right: 10px;
+}
+#projects .projects-container .project-card .project-name {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-family: Brawler, Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*-----------------
+  ABOUT SECTION
+------------------*/
+#about-me {
+  background-color: rgba(161, 212, 197, 0.97);
+  padding-bottom: 60px;
+}
+#about-me .photo-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+#about-me .photo-container img {
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#about-me .description-container {
+  margin-top: 20px;
+  font-family: Brawler, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+#about-me .description-container .description {
+  margin: 0 auto;
+  width: 60%;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+#about-me .social-networks-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+/*-----------------
+  CONTACT ME SECTION
+------------------*/
+#contact-me {
+  padding-bottom: 40px;
+}
+#contact-me .contact-note {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 20px 20px 20px;
+}
+#contact-me .contact-form label {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  color: rgb(134, 131, 131);
+  margin-left: 20px;
+  display: block;
+  text-align: start;
+}
+#contact-me .contact-form .contact-elements {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+#contact-me .contact-form .contact-elements input[type=email],
+#contact-me .contact-form .contact-elements input[type=text] {
+  width: 32vw;
+  padding: 10px 10px 10px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+#contact-me .contact-form .contact-elements input[type=email]:invalid,
+#contact-me .contact-form .contact-elements input[type=text]:invalid {
+  color: red;
+}
+#contact-me .contact-form .contact-elements input[type=text] {
+  margin-right: 10px;
+}
+#contact-me .contact-form .message-elements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 10px;
+}
+#contact-me .contact-form .message-elements label {
+  text-align: center;
+}
+#contact-me .contact-form .message-elements textarea,
+#contact-me .contact-form .message-elements button {
+  width: 64vw;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+#contact-me .contact-form .message-elements textarea {
+  resize: none;
+  min-height: 150px;
+  padding: 20px;
+}
+#contact-me .contact-form .message-elements button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgb(125, 236, 236);
+  font-weight: bold;
+  color: black;
+}
+#contact-me .contact-form .message-elements button:hover {
+  background-color: rgb(161, 210, 210);
+}
+#contact-me .contact-form .message-elements button:active {
+  background-color: rgb(168, 233, 233);
+}
+
+footer {
+  margin: 0 2px 20px 2px;
+}
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  border: 1px solid black;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .footer-container p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+}
+footer .footer-container img {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  margin-right: 20px;
+}
+
+/*----------------
+    MEDIA RULES
+-----------------*/
+@media only screen and (max-width: 700px) {
+  #projects .second {
+    display: none;
+  }
+  #contact-me .contact-form .contact-elements {
+    flex-direction: column;
+  }
+  #contact-me .contact-form .contact-elements input[type=email],
+#contact-me .contact-form .contact-elements input[type=text] {
+    width: 64vw;
+  }
+  #contact-me .contact-form .contact-elements input[type=text] {
+    margin-bottom: 10px;
+  }
+  #contact-me .contact-form .contact-elements label {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #about-me .description-container .description {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 920px) {
+  #skills .skills-container {
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #skills .skills-container .skill-card {
+    width: auto;
+    height: auto;
+    min-width: 170px;
+    margin-left: 5px;
+  }
+  #skills .skills-container .skill-card .skill-header {
+    font-size: 24px;
+  }
+  #skills .skills-container .skill-card ul {
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+}/*# sourceMappingURL=style.css.map */
