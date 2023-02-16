@@ -153,6 +153,7 @@ html {
   margin-right: 10px;
 }
 #projects .projects-container .project-card .project-name {
+  font-size: 20px;
   padding: 20px;
   background-color: black;
   color: white;
@@ -317,7 +318,7 @@ footer .footer-container img {
     flex-direction: column;
   }
   #contact-me .contact-form .contact-elements input[type=email],
-#contact-me .contact-form .contact-elements input[type=text] {
+  #contact-me .contact-form .contact-elements input[type=text] {
     width: 64vw;
   }
   #contact-me .contact-form .contact-elements input[type=text] {
